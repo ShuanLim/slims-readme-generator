@@ -37,6 +37,7 @@ THEN I am taken to the corresponding section of the README
 ## Installation Method
 
 Run the following commands BEFORE using the app to ensure proper execution of the README.md Generator.
+
 `npm init`
 
 `npm install inquirer`

@@ -42,7 +42,7 @@ Run the following commands BEFORE using the app to ensure proper execution of th
 
 `npm install inquirer`
 
-## How to use
+## How To Use
 
 Run command:
 `node index.js`

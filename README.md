@@ -50,4 +50,4 @@ then answer the prompted questions!
 
 ## Contributions
 
-Shuan Lim
+<a href='https://github.com/ShuanLim'>Shuan Lim</a>

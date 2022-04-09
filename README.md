@@ -51,3 +51,5 @@ then answer the prompted questions!
 ## Contributions
 
 <a href='https://github.com/ShuanLim'>Shuan Lim</a>
+
+Contact me via <a href='shuanmlim@gmail.com'>email</a>

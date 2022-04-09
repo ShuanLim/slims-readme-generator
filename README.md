@@ -1,5 +1,15 @@
 # Slim's README.md Generator
 
+## Table Of Contents
+
+- [Description](#description)
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
+- [Installation Method](#installation-method)
+- [How To Use](#how-to-use)
+- [Screenshots](#screenshots)
+- [Contributions](#contributions)
+
 ## Description
 
 ```
@@ -47,6 +57,10 @@ Run the following commands BEFORE using the app to ensure proper execution of th
 Run command:
 `node index.js`
 then answer the prompted questions!
+
+## Screenshots
+
+placeholder\*
 
 ## Contributions
 

@@ -1,5 +1,11 @@
 # Slim's README.md Generator
 
+## Description
+
+```
+A README.md generator app utilizing JavaScript and Node.js. This app utilizes user inputs to create a README.md file for a user's repository.
+```
+
 ## Table Of Contents
 
 - [Description](#description)
@@ -9,12 +15,6 @@
 - [How To Use](#how-to-use)
 - [Screenshots](#screenshots)
 - [Contributions](#contributions)
-
-## Description
-
-```
-A README.md generator app utilizing JavaScript and Node.js. This app utilizes user inputs to create a README.md file for a user's repository.
-```
 
 ## User Story
 

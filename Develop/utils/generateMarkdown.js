@@ -26,7 +26,7 @@ function generateMarkdown(data) {
   return `# ${data.title}
 ## Table Of Contents
 - [Project Title](#project-title)
-- [Description](#description)
+- [badeDescription](#description)
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
 - [Installation](#installation)

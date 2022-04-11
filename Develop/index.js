@@ -10,7 +10,7 @@ const generateMarkdown = require('./utils/generateMarkdown');
 const questions = [
    {
     type: 'input',
-    name: 'project-title',
+    name: 'title',
     message: 'Please input your project name.'
    },
    {
@@ -20,12 +20,12 @@ const questions = [
    },   
    {
     type: 'input',
-    name: 'user-story',
+    name: 'story',
     message: 'Please input your user story.'
    },
    {
     type: 'input',
-    name: 'acceptance-criteria',
+    name: 'criteria',
     message: 'Please input the projects acceptance criteria.'
    },
    {
@@ -77,7 +77,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions).then(function(userInput){
         console.log(userInput);
-        writeToFile('README.md', generateMarkdown(userInput));
+        writeToFile('./newReadme/README.md', generateMarkdown(userInput));
     });
 }
 

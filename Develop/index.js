@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require("inquirer");
-const util = require('util');
+const path = require('path');
 const generateMarkdown = require('.utils/generateMarkdown');
 
 
@@ -10,7 +10,7 @@ const generateMarkdown = require('.utils/generateMarkdown');
 const questions = [
    {
     type: 'input',
-    name: 'project title',
+    name: 'project-title',
     message: 'Please input your project name.'
    },
    {
@@ -20,12 +20,12 @@ const questions = [
    },   
    {
     type: 'input',
-    name: 'user story',
+    name: 'user-story',
     message: 'Please input your user story.'
    },
    {
     type: 'input',
-    name: 'acceptance criteria',
+    name: 'acceptance-criteria',
     message: 'Please input the projects acceptance criteria.'
    },
    {
@@ -41,18 +41,12 @@ const questions = [
    {
     type: 'input',
     name: 'license',
-    message: 'Does your project have any licenses?'
+    message: 'Does your project have any licenses?',
     choices: 
     [
     'GPL V3', 
     'MIT',
     'APACHE LICENSE V2',
-    'ARTISTIC LICENSE 2.0',
-    'CLARIFIED ARTISTIC LICENSE',
-    'MPL-2.0', 
-    'EPL-2.0',
-    'EUPL-1.2',
-    'MulanPSL-2.0',
     'None'
  ]
    },
@@ -76,11 +70,16 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-
-}
+    
+    };
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions).then(function(userInput){
+        console.log(userInput);
+        writeToFile('README.md', generateMarkdown(userInput));
+    });
+}
 
 // Function call to initialize app
 init();

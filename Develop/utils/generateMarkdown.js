@@ -1,37 +1,36 @@
-TODO: Create a function that returns a license badge based on which license is passed in
+//TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  return `
-  <a href='https://img.shields.io/badge/License-${data.license}-blueviolet'><img src='https://img.shields.io/badge/License-${data.license[0]}-blueviolet'></a>
-  `
-
+  return `<a href='https://img.shields.io/badge/License-${license}-blueviolet'><img src='https://img.shields.io/badge/License-${license}-blueviolet'></a>`;
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-
-
+  return `<a href='https://opensource.org/licenses/${license}'>https://opensource.org/licenses/${license}</a>`
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-
-
+  if (license !== 'None') {
+    return 'This software distributed under the terms of the ' + license + ' license.';
+  }
+  else {
+    return '';
+  }
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  console.log(data);
-  return `# ${data.title}
+  // console.log(data);
+    return `# ${data.title}
+
+
 ## Table Of Contents
 - [Title](#title)
-- [badeDescription](#description)
-- [User Story](#user-story)
-- [Acceptance Criteria](#acceptance-criteria)
+- [Description](#description)
 - [Installation](#installation)
-- [Usage](#usage)
 - [License](#license)
 - [GitHub](#github)
 - [Email](#email)
@@ -43,20 +42,15 @@ ${data.title}
 ### Description
 ${data.description}
 
-### User Story
-${data.story}
-
-### Acceptance Criteria
-${data.criteria}
-
 ### Installation
 ${data.installation}
 
-### Usage
-${data.usage}
-
 ### License
-${data.license}
+${renderLicenseSection(data.license)}
+
+${renderLicenseLink(data.license)}
+
+${renderLicenseBadge(data.license)}
 
 ### GitHub
 ${data.github}
@@ -66,7 +60,6 @@ ${data.email}
 
 ### Contribution
 ${data.contribution}
-
 `;
 }
 

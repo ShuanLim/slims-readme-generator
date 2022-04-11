@@ -1,10 +1,7 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require("inquirer");
-const path = require('path');
 const generateMarkdown = require('./utils/generateMarkdown');
-
-
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -20,26 +17,11 @@ const questions = [
    },   
    {
     type: 'input',
-    name: 'story',
-    message: 'Please input your user story.'
-   },
-   {
-    type: 'input',
-    name: 'criteria',
-    message: 'Please input the projects acceptance criteria.'
-   },
-   {
-    type: 'input',
     name: 'installation',
     message: 'Please input an installation method.'
    },
    {
-    type: 'input',
-    name: 'usage',
-    message: 'What will your project be used for?'
-   },
-   {
-    type: 'input',
+    type: 'list',
     name: 'license',
     message: 'Does your project have any licenses?',
     choices: 
@@ -48,7 +30,7 @@ const questions = [
     'MIT',
     'APACHE LICENSE V2',
     'None'
- ]
+    ]
    },
    {
     type: 'input',
@@ -70,7 +52,10 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    
+    console.log('REAEDME.md generation successful.\n' +
+    'Please check the newReadme/ directory!');
+
+    return fs.writeFileSync(fileName, data);
     };
 
 // TODO: Create a function to initialize app

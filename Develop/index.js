@@ -52,7 +52,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    console.log('REAEDME.md generation successful.\n' +
+    console.log('README.md generation successful.\n' +
     'Please check the newReadme/ directory!');
 
     return fs.writeFileSync(fileName, data);

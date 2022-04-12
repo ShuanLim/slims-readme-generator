@@ -36,7 +36,7 @@ function generateMarkdown(data) {
 - [Email](#email)
 - [Contribution](#contribution)
 
-### Project Title
+### Title
 ${data.title}
 
 ### Description

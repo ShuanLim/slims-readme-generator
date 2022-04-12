@@ -10,11 +10,11 @@
 - [Email](#email)
 - [Contribution](#contribution)
 
-### Project Title
+### Title
 Slim's README.md Generator
 
 ### Description
-A readme generator using node.js and javascript.
+A README.md Generator app using Node.js and JavaScript.
 
 ### Installation
 Run commands 'npm init' and 'npm install inquirer' prior to running the application.
@@ -33,4 +33,4 @@ slim
 slim@slim.com
 
 ### Contribution
-slim
+Slim

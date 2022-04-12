@@ -60,7 +60,11 @@ then answer the prompted questions!
 
 ## Screenshots
 
-placeholder\*
+<img width="713" alt="readme-generator" src="https://user-images.githubusercontent.com/79289373/162867074-47940ba4-9d7a-49d0-8ed7-4f8dc221886f.png">
+
+## Link to video demonstration
+
+<a href=https://drive.google.com/file/d/1ElWFjurqQK_EwpYSh7DTIri2GRvSFvDB/view>Video Demonstration Link</a>
 
 ## Contributions
 
